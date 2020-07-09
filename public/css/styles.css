@@ -1,0 +1,54 @@
+body{
+    color: blue;
+    font-family: Arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding:16px;
+    
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border-left: 3px solid black;
+    border-right:3px solid black;
+
+}
+header{
+    color:rgb(87, 85, 82);
+    margin-right:16px;
+    font-family: serif;
+    margin-top: 16px;
+    margin-bottom:64px;
+}
+
+header a{
+    color:orange;
+    margin-right:16px;
+}
+h1{
+    font-size: 64px;
+}
+footer{
+    color:gray;
+    margin-top: 16px;
+    border-top: 3px solid black;
+    padding:0px 16px;
+}
+.about-messi{
+    width: 650px;
+    margin-left:10px 10px;
+}
+.main-content{
+    flex-grow: 1; /*to occupy whole space which is left over*/
+}
+input{
+    border:2px solid black;
+    padding:8px;
+    
+}
+
+button{
+    border:2px solid black;
+    color:white;
+    background-color: gray;
+    padding:8px;
+}
