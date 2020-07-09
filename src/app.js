@@ -36,19 +36,22 @@ hbs.registerPartials(partialspath)
 app.get('',(req,res)=>{
     res.render('index',{
         name:'Keshav',
-        title:'Photography Shootouts'
+        title:'Weather Forecast',
+        tabbar:'Weather'
     })
 })
 app.get('/about',(req,res)=>{
     res.render('about',{
         name:'Keshav',
-        title:'About'
+        title:'Weather Forecast',
+        tabbar:'About'
     })
 })
 app.get('/help',(req,res)=>{
     res.render('help',{
         name:'Keshav',
-        title:'Help'
+        title:'Weather Forecast',
+        tabbar:'Help'
     })
 })
 app.get('/help/*',(req,res)=>{
