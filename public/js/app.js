@@ -4,6 +4,10 @@ console.log("client side javascript")
 const weatherform=document.querySelector('form')
 const search=document.querySelector('input')
 
+function changecolor(idlink){
+    document.getElementById(idlink).style.color="purple"
+
+}
 weatherform.addEventListener('submit',(eve)=>{
     eve.preventDefault()
     console.log('After clicking submit')
@@ -20,6 +24,7 @@ weatherform.addEventListener('submit',(eve)=>{
         else{
             console.log(data)
             // document.getElementById('error_1').innerText=''
+            document.getElementById('location').innerText=data.address
             document.getElementById('temper').innerText='Temperature : '+data.temperature
             document.getElementById('precip').innerText='Precipitation : '+data.precipitation
             

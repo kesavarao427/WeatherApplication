@@ -90,7 +90,7 @@ app.get('/weather',(req,res)=>{
                 latitude:data.latitude,
                 temperature:weather.temperature,
                 precipitation:weather.precip,
-                address:req.query.address
+                address:data.location
             })
             
         })

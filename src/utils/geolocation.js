@@ -14,7 +14,8 @@ const geolocation=(address,callback)=>{
             console.log('latitude: '+res.body.features[0].center[1] +' & longitude: '+res.body.features[0].center[0])
             const data= {
                 longitude: res.body.features[0].center[0],
-                latitude:res.body.features[0].center[1]
+                latitude:res.body.features[0].center[1],
+                location:res.body.features[0].place_name
             }      
             callback(undefined,data)   
         }
