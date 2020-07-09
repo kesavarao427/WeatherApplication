@@ -102,6 +102,11 @@ app.get('*',(req,res)=>{
         name:'Keshav'
     })
 })
-app.listen(3000,()=>{
-    console.log('Server is up and running')
+// app.listen(3000,()=>{
+//     console.log('Server is up and running')
+// })
+
+const  port=process.env.PORT || 3000  // for heroku application || is logical or
+app.listen(port,()=>{
+    console.log('Server is up and running '+port)
 })
