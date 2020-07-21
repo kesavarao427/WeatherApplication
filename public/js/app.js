@@ -9,7 +9,7 @@ function changecolor(idlink){
 
 }
 weatherform.addEventListener('submit',(eve)=>{
-    eve.preventDefault()
+    eve.preventDefault()  // to keep the values in text box without refreshing
     console.log('After clicking submit')
     console.log(search.value)
     document.getElementById('temper').innerText='Loading...'
